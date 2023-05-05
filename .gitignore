@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/MazeRunner/config
+/.vs/MazeRunner/DesignTimeBuild
+/.vs/MazeRunner/FileContentIndex
+/.vs/MazeRunner/v17
+/.vs/ProjectEvaluation
+/MazeRunner/bin/Debug/net6.0/bin/Azure.Core.dll
+/MazeRunner/bin
+/MazeRunner/obj
+/MazeRunner/Properties/PublishProfiles
+/MazeRunner6/Properties/PublishProfiles
+/MazeRunner6/Properties/ServiceDependencies
+/MazeRunner6/Properties
