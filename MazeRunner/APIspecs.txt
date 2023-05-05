@@ -1,19 +1,19 @@
-ENDPOINT: https://mazerunnerapi.azurewebsites.net/api/
+ENDPOINT: https://mazerunnerapi6.azurewebsites.net/api/
     
     ¡¡ IMPORTANT ¡¡
     for security reasons, all requests must have the parameter code at the end of the query, example:	
-    https://mazerunnerapi.azurewebsites.net/api/Maze?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
+    https://mazerunnerapi6.azurewebsites.net/api/Maze?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 Step 1) Create a new Maze
 
-[POST] https://mazerunnerapi.azurewebsites.net/api/Maze
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Maze
 
 Body request example (json):
 {
-    Width:15,
-    Height:15
+    "Width":15,
+    "Height":15
 }
 
 Width and Height represents the size of the maze. The range accepted is 5-150
@@ -30,12 +30,12 @@ The mazeUid is needed for the next step
 
 Step 2) Create a new game
 
-[POST] https://mazerunnerapi.azurewebsites.net/api/Game/{mazeUid}
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/{mazeUid}
 
 Body request example (json):
 
 {
-    Operation:"Start"
+    "Operation":"Start"
 }
 
 Response example:
@@ -52,7 +52,7 @@ With this call we are starting a new game inside the maze specified. You will ne
 
 Step 3) Take a look
 
-[GET] https://mazerunnerapi.azurewebsites.net/api/Game/{mazeUid}/{gameUid}
+[GET] https://mazerunnerapi6.azurewebsites.net/api/Game/{mazeUid}/{gameUid}
 
 Response example:
 
@@ -100,12 +100,12 @@ Maze representation:
 
 Step 4) Move next cell
 
-[POST] https://mazerunnerapi.azurewebsites.net/api/Game/{mazeUid}/{gameUid}
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/{mazeUid}/{gameUid}
 
 Body request example (json):
 
 {
-    Operation:"GoEast"
+    "Operation":"GoEast"
 }
 
 Response example:
@@ -138,7 +138,7 @@ If you try to go to a blocked direction, an error will be returned, dont try it.
 
 Step 5) Reset the game
 
-[POST] https://mazerunnerapi.azurewebsites.net/api/Game/{mazeUid}/{gameUid}
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/{mazeUid}/{gameUid}
 
 Body request example (json):
 
@@ -147,7 +147,7 @@ Body request example (json):
 }
 
 Extra step) See maze information for debuging purpouses (dont use it, dont be a cheater)
-[GET] https://mazerunnerapi.azurewebsites.net/api/Maze/mazeUid
+[GET] https://mazerunnerapi6.azurewebsites.net/api/Maze/mazeUid
 
 Response example:
 
@@ -179,7 +179,7 @@ EXAMPLE OF GAME SESSION
 ------------------------
 
 // create a new random maze
-[POST] https://mazerunnerapi.azurewebsites.net/api/Maze?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Maze?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
 [BODY] 
 {
     width:100,
@@ -193,7 +193,7 @@ EXAMPLE OF GAME SESSION
 }
 
 // create a new game using the new maze
-[POST] https://mazerunnerapi.azurewebsites.net/api/Game/4e029a62-ec89-4ce3-a05f-19d553f5ec80?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/4e029a62-ec89-4ce3-a05f-19d553f5ec80?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
 [BODY]
 {
     Operation:"Start"
@@ -208,7 +208,7 @@ EXAMPLE OF GAME SESSION
 }
 
 // look around where you are
-[GET] https://mazerunnerapi.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[GET] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
 [RESPONSE]
 {
     "game": {
@@ -229,7 +229,7 @@ EXAMPLE OF GAME SESSION
 }
 
 // because north and west are blocked, we can go to the south or the east, lest go east.
-[POST] https://mazerunnerapi.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
 [BODY]
 {
     Operation:"GoEast"
@@ -254,7 +254,7 @@ EXAMPLE OF GAME SESSION
 }
 
 // try to "jump" the wall
-[POST] https://mazerunnerapi.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
 [BODY]
 {
     Operation:"GoNorth"
@@ -263,7 +263,7 @@ EXAMPLE OF GAME SESSION
 ¡¡¡ERROR¡¡¡
 
 // go south
-[POST] https://mazerunnerapi.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
 [BODY]
 {
     Operation:"GoSouth"
@@ -288,7 +288,7 @@ EXAMPLE OF GAME SESSION
 }
 
 // go south
-[POST] https://mazerunnerapi.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
 [BODY]
 {
     Operation:"GoSouth"
