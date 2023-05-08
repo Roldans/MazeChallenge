@@ -21,9 +21,9 @@ Width and Height represents the size of the maze. The range accepted is 5-150
 Response example:
 
 {
-    "mazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5e000",
-    "height": 15,
-    "width": 15
+    "MazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5e000",
+    "Height": 15,
+    "Width": 15
 }
 
 The mazeUid is needed for the next step
@@ -41,11 +41,11 @@ Body request example (json):
 Response example:
 
 {
-    "mazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5e000",
-    "gameUid": "101ada35-6b81-4ef3-be36-ee38ae754000",
-    "completed": false,
-    "currentPositionX": 0,
-    "currentPositionY": 0
+    "MazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5e000",
+    "GameUid": "101ada35-6b81-4ef3-be36-ee38ae754000",
+    "Completed": false,
+    "CurrentPositionX": 0,
+    "CurrentPositionY": 0
 }
 
 With this call we are starting a new game inside the maze specified. You will nedd gameUid for the next step
@@ -57,20 +57,20 @@ Step 3) Take a look
 Response example:
 
 {
-    "game": {
-        "mazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5ec80",
-        "gameUid": "f203e09c-4603-46b5-8cd5-04b9aa3805c4",
-        "completed": false,
-        "currentPositionX": 4,
-        "currentPositionY": 0
+    "Game": {
+        "MazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5ec80",
+        "GameUid": "f203e09c-4603-46b5-8cd5-04b9aa3805c4",
+        "Completed": false,
+        "CurrentPositionX": 4,
+        "CurrentPositionY": 0
     },
-    "mazeBlockView": {
-        "coordX": 4,
-        "coordY": 0,
-        "northBlocked": true,
-        "southBlocked": true,
-        "westBlocked": false,
-        "eastBlocked": false
+    "MazeBlockView": {
+        "CoordX": 4,
+        "CoordY": 0,
+        "NorthBlocked": true,
+        "SouthBlocked": true,
+        "WestBlocked": false,
+        "EastBlocked": false
     }
 }
 
@@ -111,20 +111,20 @@ Body request example (json):
 Response example:
 
 {
-    "game": {
-        "mazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5e000",
-        "gameUid": "f203e09c-4603-46b5-8cd5-04b9aa380000",
-        "completed": false,
-        "currentPositionX": 4,
-        "currentPositionY": 0
+    "Game": {
+        "MazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5e000",
+        "GameUid": "f203e09c-4603-46b5-8cd5-04b9aa380000",
+        "Completed": false,
+        "CurrentPositionX": 4,
+        "CurrentPositionY": 0
     },
-    "mazeBlockView": {
-        "coordX": 4,
-        "coordY": 0,
-        "northBlocked": true,
-        "southBlocked": true,
-        "westBlocked": false,
-        "eastBlocked": false
+    "MazeBlockView": {
+        "CoordX": 4,
+        "CoordY": 0,
+        "NorthBlocked": true,
+        "SouthBlocked": true,
+        "WestBlocked": false,
+        "EastBlocked": false
     }
 }
 
@@ -152,25 +152,25 @@ Extra step) See maze information for debuging purpouses (dont use it, dont be a 
 Response example:
 
 {
-    "mazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5ec80",
-    "width": 15,
-    "height": 15,
-    "blocks": [
+    "MazeUid": "4e029a62-ec89-4ce3-a05f-19d553f5ec80",
+    "Width": 15,
+    "Height": 15,
+    "Blocks": [
         {
-            "coordX": 0,
-            "coordY": 0,
-            "northBlocked": true,
-            "southBlocked": false,
-            "westBlocked": true,
-            "eastBlocked": false
+            "CoordX": 0,
+            "CoordY": 0,
+            "NorthBlocked": true,
+            "SouthBlocked": false,
+            "WestBlocked": true,
+            "EastBlocked": false
         },
         {
-            "coordX": 1,
-            "coordY": 0,
-            "northBlocked": true,
-            "southBlocked": true,
-            "westBlocked": false,
-            "eastBlocked": false
+            "CoordX": 1,
+            "CoordY": 0,
+            "NorthBlocked": true,
+            "SouthBlocked": true,
+            "WestBlocked": false,
+            "EastBlocked": false
         }.......
 		
 		
@@ -182,79 +182,79 @@ EXAMPLE OF GAME SESSION
 [POST] https://mazerunnerapi6.azurewebsites.net/api/Maze?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
 [BODY] 
 {
-    width:100,
-    height:100
+    Width:100,
+    Height:100
 }
 [RESPONSE]
 {
-    "mazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
-    "height": 100,
-    "width": 100
+    "MazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
+    "Height": 100,
+    "Width": 100
 }
 
 // create a new game using the new maze
-[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/4e029a62-ec89-4ce3-a05f-19d553f5ec80?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/4e029a62-ec89-4ce3-a05f-19d553f5ec80?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
 [BODY]
 {
     Operation:"Start"
 }
 [RESPONSE]
 {
-    "mazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
-    "gameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
-    "completed": false,
-    "currentPositionX": 0,
-    "currentPositionY": 0
+    "MazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
+    "GameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
+    "Completed": false,
+    "CurrentPositionX": 0,
+    "CurrentPositionY": 0
 }
 
 // look around where you are
-[GET] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[GET] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
 [RESPONSE]
 {
-    "game": {
-        "mazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
-        "gameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
-        "completed": false,
-        "currentPositionX": 0,
-        "currentPositionY": 0
+    "Game": {
+        "MazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
+        "GameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
+        "Completed": false,
+        "CurrentPositionX": 0,
+        "CurrentPositionY": 0
     },
-    "mazeBlockView": {
-        "coordX": 0,
-        "coordY": 0,
-        "northBlocked": true,
-        "southBlocked": false,
-        "westBlocked": true,
-        "eastBlocked": false
+    "MazeBlockView": {
+        "CoordX": 0,
+        "CoordY": 0,
+        "NorthBlocked": true,
+        "SouthBlocked": false,
+        "WestBlocked": true,
+        "EastBlocked": false
     }
 }
 
 // because north and west are blocked, we can go to the south or the east, lest go east.
-[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
 [BODY]
 {
     Operation:"GoEast"
 }
 [RESPONSE]
 {
-    "game": {
-        "mazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
-        "gameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
-        "completed": false,
-        "currentPositionX": 1,
-        "currentPositionY": 0
+    "Game": {
+        "MazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
+        "GameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
+        "Completed": false,
+        "CurrentPositionX": 1,
+        "CurrentPositionY": 0
     },
-    "mazeBlockView": {
-        "coordX": 1,
-        "coordY": 0,
-        "northBlocked": true,
-        "southBlocked": false,
-        "westBlocked": false,
-        "eastBlocked": false
+    "MazeBlockView": {
+        "CoordX": 1,
+        "CoordY": 0,
+        "NorthBlocked": true,
+        "SouthBlocked": false,
+        "WestBlocked": false,
+        "EastBlocked": false
     }
 }
 
 // try to "jump" the wall
-[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
 [BODY]
 {
     Operation:"GoNorth"
@@ -263,51 +263,51 @@ EXAMPLE OF GAME SESSION
 ¡¡¡ERROR¡¡¡
 
 // go south
-[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
 [BODY]
 {
     Operation:"GoSouth"
 }
 [RESPONSE]
 {
-    "game": {
-        "mazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
-        "gameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
-        "completed": false,
-        "currentPositionX": 1,
-        "currentPositionY": 1
+    "Game": {
+        "MazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
+        "GameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
+        "Completed": false,
+        "CurrentPositionX": 1,
+        "CurrentPositionY": 1
     },
-    "mazeBlockView": {
-        "coordX": 1,
-        "coordY": 1,
-        "northBlocked": false,
-        "southBlocked": false,
-        "westBlocked": true,
-        "eastBlocked": true
+    "MazeBlockView": {
+        "CoordX": 1,
+        "CoordY": 1,
+        "NorthBlocked": false,
+        "SouthBlocked": false,
+        "WestBlocked": true,
+        "EastBlocked": true
     }
 }
 
 // go south
-[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=bINetL5Vm7pVuoPm/SXIMi9Niv3D9DxpPQ8tDPbsyJ0J4KZfSQl/yA==
+[POST] https://mazerunnerapi6.azurewebsites.net/api/Game/8d6ce136-655b-48b7-ba4e-bd7b01004c90/22a48db0-3296-4c0b-94f5-ca857d6ff26e?code=CTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw==
 [BODY]
 {
     Operation:"GoSouth"
 }
 [RESPONSE]
 {
-    "game": {
-        "mazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
-        "gameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
-        "completed": false,
-        "currentPositionX": 1,
-        "currentPositionY": 2
+    "Game": {
+        "MazeUid": "8d6ce136-655b-48b7-ba4e-bd7b01004c90",
+        "GameUid": "22a48db0-3296-4c0b-94f5-ca857d6ff26e",
+        "Completed": false,
+        "CurrentPositionX": 1,
+        "CurrentPositionY": 2
     },
-    "mazeBlockView": {
-        "coordX": 1,
-        "coordY": 2,
-        "northBlocked": false,
-        "southBlocked": true,
-        "westBlocked": false,
-        "eastBlocked": false
+    "MazeBlockView": {
+        "CoordX": 1,
+        "CoordY": 2,
+        "NorthBlocked": false,
+        "SouthBlocked": true,
+        "WestBlocked": false,
+        "EastBlocked": false
     }
 }
