@@ -72,7 +72,7 @@ namespace MazeRunner6
                         default:
                             if (EvaluateMovement(maze, game, data.Operation))
                             {
-                                if (game.CurrentPositionX == maze.Width && game.CurrentPositionY == maze.Height)
+                                if (game.CurrentPositionX == maze.Width - 1 && game.CurrentPositionY == maze.Height - 1)
                                 {
                                     game.Completed = true;
                                 }
