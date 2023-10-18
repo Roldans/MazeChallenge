@@ -1,0 +1,17 @@
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\bin\Debug\net6.0\MazeRunnerClient.exe
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\bin\Debug\net6.0\MazeRunnerClient.deps.json
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\bin\Debug\net6.0\MazeRunnerClient.runtimeconfig.json
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\bin\Debug\net6.0\MazeRunnerClient.dll
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\bin\Debug\net6.0\MazeRunnerClient.pdb
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\MazeRunnerClient.csproj.AssemblyReference.cache
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\MazeRunnerClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\MazeRunnerClient.AssemblyInfoInputs.cache
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\MazeRunnerClient.AssemblyInfo.cs
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\MazeRunnerClient.csproj.CoreCompileInputs.cache
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\MazeRunnerClient.csproj.CopyComplete
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\MazeRunnerClient.dll
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\refint\MazeRunnerClient.dll
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\MazeRunnerClient.pdb
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\MazeRunnerClient.genruntimeconfig.cache
+C:\Users\pablo.roldan.GOTOAUCTIONS\source\MazeChallenge\MazeRunnerClient\obj\Debug\net6.0\ref\MazeRunnerClient.dll

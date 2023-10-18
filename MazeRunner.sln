@@ -5,7 +5,9 @@ VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeRunner", "MazeRunner\MazeRunner.csproj", "{98095428-5616-4366-8E22-9434DF6BB47D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeRunner6", "MazeRunner6\MazeRunner6.csproj", "{9240CD79-4428-45DE-B1F1-C43797BC0D19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MazeRunner6", "MazeRunner6\MazeRunner6.csproj", "{9240CD79-4428-45DE-B1F1-C43797BC0D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MazeRunnerClient", "MazeRunnerClient\MazeRunnerClient.csproj", "{A7E4115F-6601-4579-A8C0-98EFB41CC47B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{9240CD79-4428-45DE-B1F1-C43797BC0D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9240CD79-4428-45DE-B1F1-C43797BC0D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9240CD79-4428-45DE-B1F1-C43797BC0D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E4115F-6601-4579-A8C0-98EFB41CC47B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E4115F-6601-4579-A8C0-98EFB41CC47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E4115F-6601-4579-A8C0-98EFB41CC47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E4115F-6601-4579-A8C0-98EFB41CC47B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

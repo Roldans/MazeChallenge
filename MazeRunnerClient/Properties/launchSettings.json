@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MazeRunnerClient": {
+      "commandName": "Project",
+      "commandLineArgs": "https://mazerunnerapi6.azurewebsites.net/api/\r\nCTLH2JGw02ntEMlwXANzIegaNFGi/vSE34NSvgar5WYFb1x349z8jw=="
+    }
+  }
+}
